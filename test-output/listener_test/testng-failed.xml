@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [listener_test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.selenium.listener.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="automation_test(failed)">
+    <classes>
+      <class name="com.selenium.listener.SampleTestClass">
+        <methods>
+          <include name="testThree"/>
+          <include name="testFour"/>
+        </methods>
+      </class> <!-- com.selenium.listener.SampleTestClass -->
+    </classes>
+  </test> <!-- automation_test(failed) -->
+</suite> <!-- Failed suite [listener_test] -->
